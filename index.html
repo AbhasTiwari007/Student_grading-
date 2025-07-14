@@ -10,11 +10,12 @@
     <h1>This Website Will Grade you</h1>
     <br>
     Enter your name<br>
-     <input type="text">
+     <input type="text" id="name">
      <br> Enter your school id<br>
-     <input type="number">
+     <input type="number" id="school_id">
      <br>
      Choose subjects:<br>
+     <form id="grading_form">
      <label >Subject 1:</label>
      <select>
     <option value="Phy">Physics</option>
@@ -26,9 +27,8 @@
      <option value="Com">Commerce</option>   
      <option value="Acc">Accounts</option>   
      <option value="Eco">Economics</option> 
-     <input type="hidden" id="my1">  
     </select>
-    <input type="number">
+    <input type="number" id="sub_1">
     <br>
  <label > Subject 2:</label>
      <select>
@@ -41,9 +41,8 @@
      <option value="Com">Commerce</option>   
      <option value="Acc">Accounts</option>   
      <option value="Eco">Economics</option>   
-     <input type="hidden"Enter Marks>
     </select>
-    <input type="number">
+    <input type="number" id="sub_2">
     <br>
     <label > Subject 3:</label>
      <select>
@@ -55,10 +54,9 @@
      <option value="CTS">Computer</option>     
      <option value="Com">Commerce</option>   
      <option value="Acc">Accounts</option>   
-     <option value="Eco">Economics</option>
-     <input type="hidden"Enter Marks>   
+     <option value="Eco">Economics</option>  
     </select>
-    <input type="number">
+    <input type="number" id="sub_3">
     <br>
     <label >Subject 4:</label>
      <select>
@@ -70,10 +68,9 @@
      <option value="CTS">Computer</option>     
      <option value="Com">Commerce</option>   
      <option value="Acc">Accounts</option>   
-     <option value="Eco">Economics</option> 
-     <input type="hidden"Enter Marks>  
+     <option value="Eco">Economics</option>  
     </select>
-    <input type="number"><br>
+    <input type="number" id="sub_4"><br>
     <label >Subject 5:</label>
      <select>
     <option value="Phy">Physics</option>
@@ -85,9 +82,11 @@
      <option value="Com">Commerce</option>   
      <option value="Acc">Accounts</option>   
      <option value="Eco">Economics</option>   
-     <input type="hidden"Enter Marks>
     </select>
-    <input type="number"><br>
-    <input type="submit"Submit>
+    <input type="number" id="sub_5"><br>
+    <button type="button" onclick="grade_calc()">Calculate Grade</button>
+     </form>
+    <div id="res"></div>
+    
 </body>
 </html>
