@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading</title>
+</head>
+<body>
+        <script src="main.js"></script>
+    <h1>This Website Will Grade you</h1>
+    <br>
+    Enter your name<br>
+     <input type="text" id="name">
+     <br> Enter your school id<br>
+     <input type="number" id="school_id">
+     <br>
+     Choose subjects:<br>
+     <form id="grading_form">
+     <label >Subject 1:</label>
+     <select>
+    <option value="Phy">Physics</option>
+     <option value="Maths">Mathematics</option>
+     <option value="Chem">Chemistry</option>        
+     <option value="Bio">Biology</option> 
+     <option value="Hin">Hindi</option>     
+     <option value="CTS">Computer</option>     
+     <option value="Com">Commerce</option>   
+     <option value="Acc">Accounts</option>   
+     <option value="Eco">Economics</option> 
+    </select>
+    <input type="number" id="sub_1">
+    <br>
+ <label > Subject 2:</label>
+     <select>
+     <option value="Phy">Physics</option>
+     <option value="Maths">Mathematics</option>
+     <option value="Chem">Chemistry</option>        
+     <option value="Bio">Biology</option> 
+     <option value="Hin">Hindi</option>     
+     <option value="CTS">Computer</option>     
+     <option value="Com">Commerce</option>   
+     <option value="Acc">Accounts</option>   
+     <option value="Eco">Economics</option>   
+    </select>
+    <input type="number" id="sub_2">
+    <br>
+    <label > Subject 3:</label>
+     <select>
+      <option value="Phy">Physics</option>
+     <option value="Maths">Mathematics</option>
+     <option value="Chem">Chemistry</option>        
+     <option value="Bio">Biology</option> 
+     <option value="Hin">Hindi</option>     
+     <option value="CTS">Computer</option>     
+     <option value="Com">Commerce</option>   
+     <option value="Acc">Accounts</option>   
+     <option value="Eco">Economics</option>  
+    </select>
+    <input type="number" id="sub_3">
+    <br>
+    <label >Subject 4:</label>
+     <select>
+     <option value="Phy">Physics</option>
+     <option value="Maths">Mathematics</option>
+     <option value="Chem">Chemistry</option>        
+     <option value="Bio">Biology</option> 
+     <option value="Hin">Hindi</option>     
+     <option value="CTS">Computer</option>     
+     <option value="Com">Commerce</option>   
+     <option value="Acc">Accounts</option>   
+     <option value="Eco">Economics</option>  
+    </select>
+    <input type="number" id="sub_4"><br>
+    <label >Subject 5:</label>
+     <select>
+    <option value="Phy">Physics</option>
+     <option value="Maths">Mathematics</option>
+     <option value="Chem">Chemistry</option>        
+     <option value="Bio">Biology</option> 
+     <option value="Hin">Hindi</option>     
+     <option value="CTS">Computer</option>     
+     <option value="Com">Commerce</option>   
+     <option value="Acc">Accounts</option>   
+     <option value="Eco">Economics</option>   
+    </select>
+    <input type="number" id="sub_5"><br>
+    <button type="button" onclick="grade_calc()">Calculate Grade</button>
+     </form>
+    <div id="res"></div>
+    
+</body>
+</html>
